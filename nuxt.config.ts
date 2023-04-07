@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/content"],
   css: ["~/assets/css/global.css"],
   app: {
@@ -10,7 +11,6 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Merriweather: true,
-      "Courier Prime": true,
       "Gloria Hallelujah": true,
     },
   },

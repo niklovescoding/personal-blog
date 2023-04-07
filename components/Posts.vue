@@ -12,21 +12,8 @@
     </ul>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      posts: [],
-    };
-  },
-  async mounted() {
-    this.posts = await this.fetchPosts();
-  },
-  methods: {
-    async fetchPosts() {
-      const posts = await queryContent("/blog").find();
-      return posts;
-    },
-  },
-};
+<script setup>
+const { data: posts } = await useAsyncData("blog-content", () =>
+  queryContent("/blog").find()
+);
 </script>

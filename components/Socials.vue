@@ -1,5 +1,5 @@
 <template>
-  <div class="socials text-gray-500">
+  <div class="socials text-gray-500 m-20">
     <h3 class="socials__heading funky text-center">Let's be social butterflies together!</h3>
     <div class="socials__links text-center mt-4">
       <a

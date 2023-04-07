@@ -1,5 +1,5 @@
 <template>
-  <div class="about-me">
+  <div class="about-me m-8 lg:m-20 text-center text-lg">
     <div class="about-me__profile mb-6">
       <h1 class="funky">This is me</h1>
       <img class="inline-block" src="~/assets/arrow.svg" alt="Arrow" />
